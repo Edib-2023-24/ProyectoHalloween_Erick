@@ -8,10 +8,105 @@
 
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "carrousel";
+  src: url("../font/carousel-webfont.woff2") format("woff2"),
+    url("../font/carousel-webfont.woff") format("woff");
+}
+main {
+  font-family: carrousel;
 }
 
+/* Retina Display */
+/* Móvil */
+.index {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media only screen and (min-width: 320px) and (max-width: 500px) and (orientation: portrait) {
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-image: url(../img/smartphone/imagen_Index.webp);
+      background-size: cover;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      background-image: url(..img/smartphone/imagen_Index@2x.webp);
+      background-size: cover;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 3) {
+      background-image: url(..img/smartphone/imagen_Index@3x.webp);
+      background-size: cover;
+    }
+  }
+}
+.final {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media only screen and (min-width: 320px) and (max-width: 500px) and (orientation: portrait) {
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-image: url(../img/smartphone/esqueleto.gif);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+.susto {
+  height: 105vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media only screen and (min-width: 320px) and (max-width: 500px) and (orientation: portrait) {
+    @media (-webkit-min-device-pixel-ratio: 1) {
+      background-image: url(../img/smartphone/imagen_Susto.webp);
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      background-image: url(..img/smartphone/imagen_Susto@2x.webp);
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 3) {
+      background-image: url(..img/smartphone/imagen_Susto@3x.webp);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+.faltan{
+  font-size: 5rem;
+  color: #f86800;
+}
+.ya,
+.halloween {
+  padding-top: 40px;
+  font-size: 4.5rem;
+  color: #f86800;
+}
+.contador {
+  display: flex;
+  flex-direction: row;
+  color: #f86800;
+  line-height: 3.25rem;
+  font-size: 7rem;
+  padding: 120px 60px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 120px;
+}
+
+.footer__imagen:hover {
+  cursor: pointer;
+}
 /* ******************************** */
 
 /* Colores */
